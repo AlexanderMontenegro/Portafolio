@@ -58,7 +58,7 @@ html{
 /* SECCION I N I C I O */
 .inicio{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-    url(img/fondo.jpg);
+    url(img/fondo1.jpg);
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -75,7 +75,7 @@ html{
 }
 .inicio .contenido-banner img{
     margin-top: 40px;
-    border: 10px solid #1CB698;
+    border: 10px solid #b6401c;
     display: block;
     width: 80%;
     margin: auto;
@@ -104,7 +104,7 @@ html{
     transition: .3s;
 }
 .inicio .contenido-banner .redes a:hover{
-    background-color: #1CB698;
+    background-color: #b6401c;
 }
 .sobremi{
     background-color: #1e2326;
@@ -151,11 +151,11 @@ html{
 }
 .sobremi .fila .col ul li strong{
     display: inline-block;
-    color: #1CB698;
+    color: #b6401c;
     width: 130px;
 }
 .sobremi .fila .col ul li span{
-    background-color: #1CB698;
+    background-color: #b6401c;
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
@@ -176,7 +176,7 @@ html{
     justify-content: center;
     transition: .3s;
 }.sobremi .fila .col .contenedor-intereses .interes:hover{
-    background-color: #1CB698;
+    background-color: #b6401c;
 }
 .sobremi .fila .col .contenedor-intereses .interes i{
     font-size: 30px;
@@ -250,7 +250,7 @@ html{
     margin-bottom: 30px;
 }
 .skills .skill .progreso{
-    background-color: #1CB698;
+    background-color: #b6401c;
     position: absolute;
     top: 0;
     left: 0;
@@ -260,7 +260,7 @@ html{
     position: absolute;
     height: 40px;
     width: 40px;
-    background-color: #1CB698;
+    background-color: #b6401c;
     border-radius: 50px;
     line-height: 40px;
     text-align: center;
@@ -590,7 +590,7 @@ html{
     top: 40%;
     background-color: #252A2E;
     padding: 20px;
-    max-swidth: 350px;
+    
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -633,7 +633,7 @@ footer .arriba{
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #1CB698;
+    background-color: #b6401c;
     color: #fff;
     position: absolute;
     left: 50%;
