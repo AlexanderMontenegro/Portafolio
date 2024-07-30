@@ -5,6 +5,9 @@
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none; 
+}
 html{
     /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
@@ -262,7 +265,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: 1s;
+    transition: 0.1s;
     font-size: 18px;
     letter-spacing: 3px;
     opacity: 0;
