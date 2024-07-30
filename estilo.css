@@ -105,6 +105,7 @@ html{
 }
 .inicio .contenido-banner .redes a:hover{
     background-color: #b6401c;
+    text-decoration: none;
 }
 .sobremi{
     background-color: #1e2326;
