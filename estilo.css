@@ -119,6 +119,7 @@ html{
     background-color: #b6401c;
     text-decoration: none;
 }
+
 .sobremi{
     background-color: #1e2326;
     color: #fff;
@@ -335,6 +336,12 @@ footer .redes a{
     margin: 40px 5px;
     font-size: 20px;
     transition: .3s;
+}
+
+footer .redes a:hover {
+    background-color: #b6401c;
+    transform: scale(1.7); 
+    transition: transform 0.3s; 
 }
 footer .arriba{
     display: block;
