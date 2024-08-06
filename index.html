@@ -1,178 +1,291 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Portfolio</title>
-    <meta name="description" content="Portfolio de Alexander Gabriel Montenegro, desarrollador Full Stack con experiencia en tecnología y desarrollo web.">
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilo.css">
-</head>
-<body>
+    <meta
+      name="description"
+      content="Portfolio de Alexander Gabriel Montenegro, desarrollador Full Stack con experiencia en tecnología y desarrollo web."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">AGM</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#estudios" onclick="seleccionar()">ESTUDIOS</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
-                </ul>
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
+      <header>
+        <div class="logo">
+          <a href="#">AGM</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#estudios" onclick="seleccionar()">ESTUDIOS</a></li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
     </div>
 
     <!-- SECCION INICIO -->
     <main id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img/Sin título-1.png" alt="">
-            </div>
-            <h1>Alexander Gabriel Montenegro</h1>
-            <div class="redesinicio">
-               <i class="fa-brands fa-square-js"></i>
-               <i class="fa-brands fa-react"></i>
-               <i class="fa-brands fa-html5"></i>
-               <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-git-alt"></i>
-                <i class="fa-solid fa-database"></i>
-            </div>
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/Sin título-1.png" alt="" />
         </div>
-      
+        <h1>Alexander Gabriel Montenegro</h1>
+        <div class="redesinicio">
+          <i class="fa-brands fa-square-js"></i>
+          <i class="fa-brands fa-react"></i>
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-css3-alt"></i>
+          <i class="fa-brands fa-git-alt"></i>
+          <i class="fa-solid fa-database"></i>
+        </div>
+      </div>
     </main>
-    
 
     <!-- SECCION SOBRE MI -->
     <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>SOBRE MI</h2>
-            <h4>
-                <p> Soy un desarrollador Full Stack apasionado por la tecnología y la innovación, con una sólida formación en electricidad, electrónica, domótica y climatización.</p>
-                 
-                 <p> Actualmente, estoy ampliando mis conocimientos en desarrollo web, especializándome en JavaScript, HTML, CSS, Node.js, React, Express y SQL.</p>
-                 
-                 <p> Mi experiencia laboral abarca desde la instalación y mantenimiento de sistemas eléctricos, climatización continuando con la automatización y desarrollo en soluciones tecnológicas integrales.</p>
-                 
-                 <p> Soy un profesional versátil y orientado a resultados, con habilidades destacadas en resolución de problemas, organización y comunicación.</p>
-             </h4>
-       
-            <div class="fila">
-                <!-- Datos personales -->
-                <div class="col">
-                    <h3>DATOS PERSONALES</h3>
-                    <ul>
-                        <li><strong>Cumpleaños</strong> 19-06-1991</li>
-                        <li><strong>Teléfono</strong> 1134252407</li>
-                        <li><strong>Email</strong> alexandermontenegro0691@gmail.com</li>
-                        <li><strong>Ubicación</strong> Buenos Aires, Moreno</li>
-                        <li><strong>Disponibilidad</strong> <span>Full Time</span></li>
-                    </ul>
-                </div>
-                <!-- Intereses -->
-                <div class="col">
-                    <h3>INTERES</h3>
-                    <div class="contenedor-intereses">
-                        <div class="interes"><i class="fa-solid fa-gamepad"></i><span>JUEGOS</span></div>
-                        <div class="interes"><i class="fa-solid fa-headphones"></i><span>MUSICA</span></div>
-                        <div class="interes"><i class="fa-solid fa-plane"></i><span>VIAJAR</span></div>
-                        <div class="interes"><i class="fa-solid fa-dog"></i><span>PERROS</span></div>
-                        <div class="interes"><i class="fa-solid fa-dumbbell"></i><span>DEPORTE</span></div>
-                        <div class="interes"><i class="fa-solid fa-car"></i><span>AUTOS</span></div>
-                    </div>
-                </div>
+      <div class="contenido-seccion">
+        <h2>SOBRE MI</h2>
+        <h4>
+          <p>
+            Soy un desarrollador Full Stack apasionado por la tecnología y la
+            innovación, con una sólida formación en electricidad, electrónica,
+            domótica y climatización.
+          </p>
+
+          <p>
+            Actualmente, estoy ampliando mis conocimientos en desarrollo web,
+            especializándome en JavaScript, HTML, CSS, Node.js, React, Express y
+            SQL.
+          </p>
+
+          <p>
+            Mi experiencia laboral abarca desde la instalación y mantenimiento
+            de sistemas eléctricos, climatización continuando con la
+            automatización y desarrollo en soluciones tecnológicas integrales.
+          </p>
+
+          <p>
+            Soy un profesional versátil y orientado a resultados, con
+            habilidades destacadas en resolución de problemas, organización y
+            comunicación.
+          </p>
+        </h4>
+
+        <div class="fila">
+          <!-- Datos personales -->
+          <div class="col">
+            <h3>DATOS PERSONALES</h3>
+            <ul>
+              <li><strong>Cumpleaños</strong> 19-06-1991</li>
+              <li><strong>Teléfono</strong> 1134252407</li>
+              <li><strong>Email</strong> alexandermontenegro0691@gmail.com</li>
+              <li><strong>Ubicación</strong> Buenos Aires, Moreno</li>
+              <li><strong>Disponibilidad</strong> <span>Full Time</span></li>
+            </ul>
+          </div>
+          <!-- Intereses -->
+          <div class="col">
+            <h3>INTERES</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i><span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i><span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i><span>VIAJAR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-dog"></i><span>PERROS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-dumbbell"></i><span>DEPORTE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-car"></i><span>AUTOS</span>
+              </div>
             </div>
-            <a href="Docs/CV Alexander Montenegro.pdf" target="_blank" download>
-                <button>Descargar CV <i class="fa-solid fa-download"></i><span class="overlay"></span></button>
-            </a>
+          </div>
         </div>
+        <a href="Docs/CV Alexander Montenegro.pdf" target="_blank" download>
+          <button>
+            Descargar CV <i class="fa-solid fa-download"></i
+            ><span class="overlay"></span>
+          </button>
+        </a>
+      </div>
     </section>
     <section id="estudios" class="carousel">
-    
-        <h2>TITULOS Y CERTIFICADOS</h2>
-        <div class="carousel-images">
-          <div class="carousel-item"><img src="Docs/fondo.png" alt="Imagen 1"></div>
-          <div class="carousel-item"><img src="Docs/Iaraa.png" alt="Imagen 1"></div>
-          <div class="carousel-item"><img src="Docs/Acyede.png" alt="Imagen 2"></div>
-          <div class="carousel-item"><img src="Docs/Copime.png" alt="Imagen 3"></div>
-          <div class="carousel-item"><img src="Docs/CellMovile.png" alt="Imagen 3"></div>
-          <div class="carousel-item"><img src="Docs/EpoxiNova.png" alt="Imagen 3"></div>s
-          <div class="carousel-item"><img src="Docs/Henry.png" alt="Imagen 3"></div>
-          <div class="carousel-item"><img src="Docs/fondo.png" alt="Imagen 1"></div>
+      <h2>TITULOS Y CERTIFICADOS</h2>
+      <div class="carousel-images">
+        <div class="carousel-item">
+          <img src="Docs/fondo.png" alt="Imagen 1" />
         </div>
+        <div class="carousel-item">
+          <img src="Docs/Iaraa.png" alt="Imagen 1" >
+          <p>Tecnico en climatización</p>
+        </div>
+        <div class="carousel-item">
+          <img src="Docs/Acyede.png" alt="Imagen 2" />
+          <p>Tecnico  Electricista</p>
+        </div>
+        <div class="carousel-item">
+          <img src="Docs/Copime.png" alt="Imagen 3" />
+          <p>Tecnico  Electricista</p>
+        </div>
+        <div class="carousel-item">
+          <img src="Docs/CellMovile.png" alt="Imagen 3" />
+          <p>Tecnico en Electronica y Domotica</p>
+        </div>
+        <div class="carousel-item">
+          <img src="Docs/EpoxiNova.png" alt="Imagen 3" />
+          <p>Manipulacion de Recina Epoxica</p>
+        </div>
+        <div class="carousel-item">
+          <img src="Docs/Henry.png" alt="Imagen 3" />
+          <p>Desarrollo Full Stack</p>
+        </div>
+        <div class="carousel-item">
+          <img src="Docs/fondo.png" alt="Imagen 1" />
+        </div>
+      </div>
     </section>
-      
 
-
-
-    
     <!-- SECCION PORTFOLIO -->
     <section id="portfolio" class="portfolio">
-        <div class="contenido-seccion">
-            <h2>PORTFOLIO</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <img src="img/campeones del mundo.png" alt="">
-                    <div class="overlay">
-                        <h3>E-Commerce</h3>
-                        <p>Campeones Del Mundo - Productos Deportivos</p>
-                        <a href="https://youtu.be/mTdL0whEhVg?si=OkPZ-vutN6uR75k-" target="_blank"><h4>+ Info</h4></a>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/countri.png" alt="">
-                    <div class="overlay">
-                        <h3>Agencia</h3>
-                        <p>Turismo Countri - Paises & Actividades</p>
-                        <h4>+ Info</h4>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/erde.png" alt="">
-                    <div class="overlay">
-                        <h3>E-Commerce</h3>
-                        <p>Erde D & C - Artículos Personalizados</p>
-                        <h4>+ Info</h4>
-                    </div>
-                </div>
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="img/campeones del mundo.png" alt="" />
+            <div class="overlay">
+              <h3>E-Commerce</h3>
+              <br />
+              <p>Campeones Del Mundo</p>
+              <p>Productos Deportivos</p>
+              <br />
+              <a
+                href="https://youtu.be/mTdL0whEhVg?si=OkPZ-vutN6uR75k-"
+                target="_blank"
+                ><h4>Demo</h4></a
+              >
+              <br />
+              <a
+                href="https://h-pf18b-campeonesdelmundo-f.onrender.com"
+                target="_blank"
+                ><h4>Producto</h4></a
+              >
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/countri.png" alt="" />
+            <div class="overlay">
+              <h3>Agencia</h3>
+              <br />
+              <p>Turismo Countri</p>
+              <p>Paises & Actividades</p>
+              <br />
+              <a href="" target="_blank"><h4>Demo</h4></a>
+              <br />
+              <a href="" target="_blank"><h4>Producto</h4></a>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/erde.png" alt="">
+            <div class="overlay">
+                <h3>E-Commerce</h3>
+                <br/>
+                <p>Erde D & C</p>
+                <p>Artículos Personalizados</p>
+                <br/>
+                <a href="" target="_blank"><h4>Demo</h4></a>
+                <br/>
+                <a href="" target="_blank"><h4>Producto</h4></a>
             </div>
         </div>
+        <div class="proyecto">
+            <img src="img/chat.png" alt="">
+            <div class="overlay">
+                <h3>Chat</h3>
+                <br/>
+                <p>Chat unicos</p>
+                <p>Chat privados con acceso restrigido</p>
+                <br/>
+                <a href="" target="_blank"><h4>Demo</h4></a>
+                <br/>
+                <a href="https://chat-socket-io-4jhc.onrender.com" target="_blank"><h4>Producto</h4></a>
+            </div>
+        </div>
+
+
+
+        </div>
+      </div>
     </section>
 
     <!-- SECCION CONTACTO -->
     <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-        
-        </div>
-     
+      <div class="contenido-seccion"></div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-     
-        <h2>CONTACTATE CONMIGO</h2>
-        <div class="redes">
-            <a href="mailto:alexandermontenegro0691@gmail.com" target="_blank"><i class="fa-solid fa-envelope-open-text"></i></a>
-            <a href="https://www.linkedin.com/in/alexander-montenegro/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://wa.me/+541134252407" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://github.com/AlexanderMontenegro/" target="_blank"><i class="fa-solid fa-code-branch"></i></a>
-        </div>
+      <h2>CONTACTATE CONMIGO</h2>
+      <div class="redes">
+        <a href="mailto:alexandermontenegro0691@gmail.com" target="_blank"
+          ><i class="fa-solid fa-envelope-open-text"></i
+        >  <p>Gmail</p></a>
+        <a
+          href="https://www.linkedin.com/in/alexander-montenegro/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        >  <p>Linkedin</p></a>
+        <a href="https://wa.me/+541134252407" target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ><p>Whatsapp</p></a>
+        <a href="https://github.com/AlexanderMontenegro/" target="_blank"
+          ><i class="fa-solid fa-code-branch"></i
+        ><p>Github</p></a>
+        <a href="  https://calendly.com/alexandermontenegro0691" target="_blank"
+          ><i class="fa-regular fa-calendar-days"></i
+        ><p>Calendly</p></a>
+      </div>
 
+    
 
-        <a href="#inicio" class="arriba">
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+    </footer>
+
+    <footer>
+        <p>© 2024 Copyright: Alexander Montenegro</p>
+        <p>Todos los derechos reservados</p>
+        
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

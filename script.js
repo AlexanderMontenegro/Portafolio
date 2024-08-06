@@ -17,4 +17,23 @@ function seleccionar(){
 }
 
 
-
+document.addEventListener('DOMContentLoaded', function () {
+    const images = document.querySelectorAll('.carousel-item img');
+    const overlay = document.createElement('div');
+    overlay.classList.add('img-overlay');
+    const overlayImage = document.createElement('img');
+    overlay.appendChild(overlayImage);
+    document.body.appendChild(overlay);
+  
+    images.forEach(img => {
+      img.addEventListener('click', function () {
+        overlayImage.src = this.src;
+        overlay.classList.add('show');
+      });
+    });
+  
+    overlay.addEventListener('click', function () {
+      overlay.classList.remove('show');
+    });
+  });
+  
