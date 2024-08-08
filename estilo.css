@@ -636,8 +636,9 @@ footer .arriba {
 
 
 @media screen and (max-width: 768px) {
-  .nav-responsive {
-    display: block;
+
+  .nav-responsive{
+    display: none;
   }
   
   .contenedor-header header {
@@ -713,10 +714,10 @@ footer .arriba {
 }
 
 @media screen and (max-width: 600px) {
-  
-  .nav-responsive {
-    display: block;
+  .nav-responsive{
+    display: none;
   }
+
 
 
   footer .redes {
@@ -731,8 +732,8 @@ footer .arriba {
 
 @media screen and (max-width: 480px) {
 
-  .nav-responsive {
-    display: block;
+  .nav-responsive{
+    display: none;
   }
   .carousel h2 {
     font-size: 24px;
