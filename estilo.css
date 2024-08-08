@@ -516,6 +516,56 @@ footer .arriba {
   text-align: center;
 }
 
+/*Formulario-*/
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 40rem; 
+  margin: 0 auto; 
+  padding: 1.5rem; 
+  border-radius: 8px;
+  background-image: url(img/contact_bg.png);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
+}
+
+.contact-form label {
+  font-size: 1.6rem; 
+  font-family: 'Noto Sans', sans-serif; 
+  color: #b6401c; 
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%; 
+  padding: 0.8rem;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  font-size: 1.6rem; 
+}
+
+.contact-form textarea {
+  resize: vertical; 
+  min-height: 150px; 
+}
+
+.contact-form button {
+  background-color: #003566; 
+  color: #fff; 
+  border: none; 
+  padding: 0.8rem 1.5rem; 
+  border-radius: 4px; 
+  font-size: 1.6rem; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;/
+}
+
+.contact-form button:hover {
+  background-color: #001D3D; 
+}
+
 
 /* SECCION RESPONSIVE */
 @media screen and (max-width: 980px) {
