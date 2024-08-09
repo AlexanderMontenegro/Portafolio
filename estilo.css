@@ -703,6 +703,7 @@ footer .arriba {
   .carousel-item img {
     width: 80%;
     height: 80%;
+transition: transform 0.6s;
   }
   footer .redes {
     margin-bottom: 20px;
@@ -751,6 +752,7 @@ footer .arriba {
   .carousel-item img {
     width: 80%;
     height: 80%;
+transition: transform 0.6s;
   }
   .inicio .contenido-banner {
     padding: 10px;
