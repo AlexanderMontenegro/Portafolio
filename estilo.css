@@ -308,7 +308,7 @@ html {
   width: 100%;
   height: auto;
   display: block;
-  transition: transform 0.3s;
+  transition: transform 0.6s;
   border-radius: 10px;
 }
 
@@ -777,3 +777,80 @@ footer .arriba {
 }
 }
 
+/******************************/
+
+@media screen and (max-width: 980px) {
+  .carousel h2 {
+    font-size: 36px;
+  }
+
+  .carousel-item {
+    flex: 1 0 calc(100% / 4); 
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% / 4 * 8)); 
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel h2 {
+    font-size: 32px;
+  }
+
+  .carousel-item {
+    flex: 1 0 calc(100% / 2); 
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% / 2 * 8)); 
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousel h2 {
+    font-size: 28px;
+  }
+
+  .carousel-item {
+    flex: 1 0 100%; 
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% * 8)); 
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .carousel h2 {
+    font-size: 24px;
+  }
+
+  .carousel-item {
+    flex: 1 0 100%; 
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% * 8)); 
+    }
+  }
+}
