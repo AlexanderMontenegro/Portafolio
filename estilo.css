@@ -584,6 +584,13 @@ footer .arriba {
   background-color: #001D3D; 
 }
 
+.descargas {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
 
 /* SECCION RESPONSIVE */
 @media screen and (max-width: 980px) {
