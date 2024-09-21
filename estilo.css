@@ -267,14 +267,8 @@ html {
   width: 100%;
 }
 
-@keyframes javascript {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 75%;
-  }
-}
+
+
 
 @keyframes proyect {
   0% {
@@ -391,7 +385,7 @@ to {
 }
 
 .portfolio .contenido-seccion {
-  max-width: 1100px;
+  max-width: auto;
   margin: auto;
 }
 .portfolio h2 {
@@ -979,3 +973,7 @@ transition: transform 0.6s;
     height: 80px; /* Ajusta la altura según sea necesario */
   }
 }
+
+/*****************/   /**************/
+
+
