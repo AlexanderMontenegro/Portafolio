@@ -1,50 +1,29 @@
-let menuVisible = false;
-//Función que oculta o muestra el menu
-function mostrarOcultarMenu(){
-    if(menuVisible){
-        document.getElementById("nav").classList ="";
-        menuVisible = false;
-    }else{
-        document.getElementById("nav").classList ="responsive";
-        menuVisible = true;
-    }
+// Función para mostrar/ocultar el menú en dispositivos móviles
+function mostrarOcultarMenu() {
+    const nav = document.getElementById('nav');
+    const menuButton = document.querySelector('.nav-responsive');
+    nav.classList.toggle('open');
+    menuButton.classList.toggle('open');
 }
 
-function seleccionar(){
-    //oculto el menu una vez que selecciono una opcion
-    document.getElementById("nav").classList = "";
-    menuVisible = false;
+// Función para seleccionar la sección y cambiar el color de la navegación
+function seleccionar() {
+    const enlaces = document.querySelectorAll('#nav a');
+    enlaces.forEach(enlace => {
+        enlace.classList.remove('activo');
+    });
+    this.classList.add('activo');
 }
 
-
-document.addEventListener('DOMContentLoaded', function () {
-    const images = document.querySelectorAll('.carousel-item img');
-    const overlay = document.createElement('div');
-    overlay.classList.add('img-overlay');
-    const overlayImage = document.createElement('img');
-    overlay.appendChild(overlayImage);
-    document.body.appendChild(overlay);
-  
-    images.forEach(img => {
-      img.addEventListener('click', function () {
-        overlayImage.src = this.src;
-        overlay.classList.add('show');
-      });
-    });
-  
-    overlay.addEventListener('click', function () {
-      overlay.classList.remove('show');
-    });
-  });
-  
-
-  document.querySelector('.menu-toggle').addEventListener('click', function() {
-    const nav = document.querySelector('.nav-responsive');
-    if (nav.style.display === 'block') {
-        nav.style.display = 'none';
-    } else {
-        nav.style.display = 'block';
-    }
+// Agregar un evento de clic a los enlaces para cambiar su estado activo
+document.querySelectorAll('#nav a').forEach(link => {
+    link.addEventListener('click', seleccionar);
 });
 
-  
+// Aseguramos que al cargar la página el menú responsive no esté abierto por defecto
+document.addEventListener('DOMContentLoaded', () => {
+    const nav = document.getElementById('nav');
+    nav.classList.remove('open');
+    const menuButton = document.querySelector('.nav-responsive');
+    menuButton.classList.remove('open');
+});
