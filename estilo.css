@@ -670,3 +670,56 @@ footer img{
   flex-wrap: wrap;
   align-items: stretch;
 }
+
+@media (max-width: 950px) {
+
+  .sobremi .fila {
+    flex-direction: column;
+  }
+  .sobremi .fila .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .nav-responsive {
+    display: block;
+    top: 65px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.responsive {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    background-color: #1e2326;
+    width: 200px;
+  }
+
+  nav.responsive ul {
+    display: block;
+  }
+
+  nav.responsive ul li {
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .logo img{
+    width: 12vw;
+    height: 10vh;
+  }
+  
+  .carousel-images {
+    display: flex;
+    width: 50%;
+    animation: slide 25s linear infinite;
+    min-width: 30%;
+    margin: 20px;
+}
+}
